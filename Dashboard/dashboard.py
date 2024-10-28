@@ -5,7 +5,7 @@ import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
 
-data = pd.read_csv("main_data.csv")
+data = pd.read_csv("Dashboard/main_data.csv")
 
 data['datetime'] = pd.to_datetime(data[['year', 'month', 'day', 'hour']])
 
